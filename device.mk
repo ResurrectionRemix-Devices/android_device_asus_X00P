@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(DEVICE_PATH)/prop.mk
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.X00P.fp.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
