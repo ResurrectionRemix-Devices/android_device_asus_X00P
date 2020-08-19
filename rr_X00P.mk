@@ -28,6 +28,9 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORT := true
 
+# OFFICIAL
+RR_BUILDTYPE := Official
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X00P
 PRODUCT_NAME := rr_X00P
